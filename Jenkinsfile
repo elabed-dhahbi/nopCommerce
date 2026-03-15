@@ -6,7 +6,8 @@ pipeline {
   stages {
     stage('Git clone') {
       steps {
-         git: url: 'https://github.com/elabed-dhahbi/nopCommerce.git' , branch: 'master'
+         git: url: 'https://github.com/elabed-dhahbi/nopCommerce.git' , 
+         branch: 'master'
       }  
     }
     stage('Build the code') {
